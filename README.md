@@ -34,7 +34,7 @@ I have divided the projects into macro-categories based on the typology of the p
 
 **Executive Summary**: Precise and accurate forecasts of CO<sub>2</sub> emissions can help policy makers devise strategies and measure their effects in reducing emissions to meet the climate targets. Here, I have analyzed CO<sub>2</sub> emissions from electricity production employing natural gas. I compare different algorithms (AR, MA, ARMA, ARIMA, SARIMAX) optimized to build a reliable forecast at 1 year horizon. I applied rolling split Monte Carlo cross-validation to evaluate the forecast accuracy. The optimized SARIMAX model is the best solution that strikes a balance between forecast precision and model complexity. The Symmetric Mean Absolute Percentage Error (SMAPE) on testing data is below 3%. The cross-validation shows an (expected) increasing average error with the forecasting horizon. The average error remains below 11% and roughly 75% of the forecasts are likely to have a SMAPE&lt;15%–a proof of the model’s reliability and robustness. The model predicts that CO<sub>2</sub> emissions will increase and will do so at an increased pace compared to the previous 10 years. The indication for policy maker is clear: we should rapidly take stronger measures to reduce CO<sub>2</sub> emissions.
 
-**Skills**: Python, Statsmodels, Pandas, Numpy, Matplotlib, Itertools, Tqdm, Scipy, Seaborn, SARIMAX, Time Series Analysis, Rolling-split Validation,  Monte Carlo Simulations.
+**Tools**: Python, Statsmodels, Pandas, Numpy, Matplotlib, Itertools, Tqdm, Scipy, Seaborn, SARIMAX, Time Series Analysis, Rolling-split Validation,  Monte Carlo Simulations.
 
 <p align="center">
 <img src="Images/past_10_y.png" alt="Training" width="300"/>
@@ -48,20 +48,20 @@ I have divided the projects into macro-categories based on the typology of the p
 
 **Executive Summary**: The project goal is to recommend the best amazon products available to the users by using some recommendation systems techniques. I have applied collaborative filtering and matrix factorization to build a series of recommendation systems. The collaborative filtering technique evaluates cosine similarity and employs the KNN method to identify similar users or items, based on whether user-user or item-item approach is followed. A third model is built following a matrix factorization approach, where the Singular Value Decomposition (SVD) algorithm uses the latent features of the user-item space to populate the sparse matrix of ratings. Precision, recall and F1 score are used as evaluation metrics. All models are optimized through an hyper-parameters grid search. The predictions of the item-based models are corrected to take into account the number of ratings per product (more ratings imply more reliable predictions). All models offer a very good performance with precision above 85%, with the best performance offered by the optimized user-user (precision = 87.0%) and by the SVD (precision = 86.6%) models.
 
-**Skills**: Python, Collections, Surprise, Scikit-leanr, Pandas, Numpy, Matplotlib, Recommendation Systems, Collaborative Filtering, KNN, SVD.
+**Tools**: Python, Collections, Surprise, Scikit-leanr, Pandas, Numpy, Matplotlib, Recommendation Systems, Collaborative Filtering, KNN, SVD.
 
 <p align="center">
 <img src="Images/Rec_Sys.png" alt="erros" width="600"/>
 </p>
 
 ---
-#### *[Convolutional neural networks to recognize digits](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
+#### *[Convolutional neural networks to recognize digits](https://github.com/fparisio/DataScience/tree/main/DigitRecognition)*
 
-**TL; DR**: I build a convolutional neural network (CNN) to recognize the housing number digits.
+**TL; DR**: I build a convolutional neural network (CNN) to recognize the housing number digits from a library of images. The deep learning models performs very well and can recognize digits from the image database with an accuracy above 90%.
 
-**Executive Summary**: TBW
+**Executive Summary**: In this project I build a convolutional neural network (CNN) to classify the  Street View Housing Numbers (SVHN) image data. Deep learning has been extensively employed as an image recognition tool and CNN is one of the most suited algorithm. Here, I build two different CNN models to fit the SVHN image database. Both models utilize convolutional layers followed by max-pooling ones, a dense layer and an output dense layer with a softmax activation function to classify the digits from 0 to 9 (one hot encoded). However, the initial model did not reached a sufficient accuracy (<85%) in the validation data. The model was improved by adding two more convolutional layers and a batch normalization layer after the max-pooling. Additionally, a dropout layer was placed before the final dense layer to reduce the number of trainable parameters and gain in model generalization. The second model performs very well with an accuracy above 90% with 30 training epochs and a confusion matrix that shows off-diagonal values 2 orders of magnitude small than the diagonal ones. The deep learning model is a robust tool to recognize digits from a labeled image database.
 
-**Skills**: Python, Scikit-learn, Pandas, Numpy, Matplotlib, TensorFlow, Keras, Artificial Neural Networks, Convolutional Neural Networks, Image Recognition.
+**Tools**: Python, Scikit-learn, Pandas, Numpy, Matplotlib, TensorFlow, Keras, Artificial Neural Networks, Convolutional Neural Networks, Image Recognition.
 
 <p align="center">
 <img src="Images/digit_recognition.png" alt="erros" width="600"/>
