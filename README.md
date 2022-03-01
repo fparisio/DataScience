@@ -25,9 +25,10 @@ I have divided the projects into macro-categories based on the typology of the p
 ---
 #### *[Time series analysis: forecasting CO<sub>2</sub> emissions](https://github.com/fparisio/DataScience/tree/main/TimeSeriesCO2ForecastNatGas)*
 
-**TL; DR**: The project forecasts a 1 year horizon of CO<sub>2</sub> emissions stemming from natural gas based electricity production in the United States. Through an optimized and cross-validated SARIMAX model, I predict a 6.7% increase of emitted CO<sub>2</sub> in the 1 year horizon with an uncertainty of 90%.
+**TL; DR**: The project forecasts a 1 year horizon of CO<sub>2</sub> emissions stemming from natural gas based electricity production in the United States. Through an optimized and cross-validated SARIMAX model, I predict a 6.7% increase of emitted CO<sub>2</sub> in the 1 year horizon with an uncertainty of approx. 10%.
 
-**Executive Summary**: Precise and accurate forecasts of CO<sub>2</sub> emissions can help policy makers devise strategies and measure their effects in reducing emissions to meet the climate targets. Collected past data can be employed to analyze the problem and data science methods can be used to make forecasts. I analyzed existing data from U.S. Energy Information Administration on CO<sub>2</sub> emissions from electricity production per-source. After introducing descriptive statistics and a preliminary data analysis, I propose to analyze CO<sub>2</sub> emissions from the largest growing source in electricity production: natural gas. I compare different algorithms (AR, MA, ARMA, ARIMA, SARIMAX) optimized to build a reliable 1 year forecasting model of the nonstationary data. I applied rolling split Monte Carlo cross-validation to evaluate the forecast accuracy. The optimized SARIMAX model is the best solution that strikes a balance between forecast precision and model complexity. The Symmetric Mean Absolute Percentage Error (SMAPE) on testing data is below 3%. The cross-validation provides a quantification of uncertainty in the forecast, showing an (expected) increasing average error with increasing time horizon of the forecast. The average error remains below 11% and roughly 75% of the forecasts are likely to have a SMAPE&lt;15%–a proof of the model’s reliability and robustness. The optimized SARIMAX model forecasts CO<sub>2</sub> emissions with a high precision. The forecast shows an increase in CO<sub>2</sub> emissions from natural gas in the coming 12 months that can serve as a basis case to measure policy effects. Future studies should consider multivariate time series analysis that includes relevant indicators of CO<sub>2</sub> emissions (e.g., energy demand, natural gas prices, carbon-bonds prices).
+
+**Executive Summary**: Precise and accurate forecasts of CO<sub>2</sub> emissions can help policy makers devise strategies and measure their effects in reducing emissions to meet the climate targets. Here, I have analyzed CO<sub>2</sub> emissions from electricity production employing natural gas. I compare different algorithms (AR, MA, ARMA, ARIMA, SARIMAX) optimized to build a reliable forecast at 1 year horizon. I applied rolling split Monte Carlo cross-validation to evaluate the forecast accuracy. The optimized SARIMAX model is the best solution that strikes a balance between forecast precision and model complexity. The Symmetric Mean Absolute Percentage Error (SMAPE) on testing data is below 3%. The cross-validation shows an (expected) increasing average error with the forecasting horizon. The average error remains below 11% and roughly 75% of the forecasts are likely to have a SMAPE&lt;15%–a proof of the model’s reliability and robustness. The model predicts that CO<sub>2</sub> emissions will increase and will do so at an increased pace compared to the previous 10 years. The indication for policy maker is clear: we should rapidly take stronger measures to reduce CO<sub>2</sub> emissions.
 
 **Skills**: Python, Statsmodels, Pandas, Numpy, Matplotlib, Itertools, Tqdm, Scipy, Seaborn, SARIMAX, Time Series Analysis, Rolling-split Validation,  Monte Carlo Simulations.
 
@@ -47,4 +48,19 @@ I have divided the projects into macro-categories based on the typology of the p
 
 <p align="center">
 <img src="Images/Rec_Sys.png" alt="erros" width="600"/>
+</p>
+
+---
+#### *[Neural networks: build a model to recognize digits](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
+
+**TL; DR**: TBW
+
+**Executive Summary**: TBW
+
+**Skills**: Python, Scikit-learn, Pandas, Numpy, Matplotlib, TensorFlow, Keras, Artificial Neural Networks, Convolutional Neural Networks, Image Recognition.
+
+<p align="center">
+<img src="Images/digit_recognition.png" alt="erros" width="600"/>
+<img src="Images/loss_CNN.png" alt="erros" width="300"/>
+<img src="Images/ConfusionMatrix_CNN.png" alt="erros" width="300"/>
 </p>
