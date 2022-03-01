@@ -22,9 +22,9 @@ The repository contains a series of data science and machine learning projects t
 
 I have divided the projects into macro-categories based on the typology of the problem at hand.
 
-- [Time series forecasting of CO<sub>2</sub> emissions](#Time-series)
-- [Recommendation system for Amazon products](#Rec-sys)
-- [Convolutional neural networks to recognize digits](#CNN)
+- [Time series forecasting of CO<sub>2</sub> emissions](#time-series-forecasting-of-CO<sub>2</sub>-emissions)
+- [Recommendation system for Amazon products](#recommendation-system-for-Amazon-products)
+- [Convolutional neural networks to recognize digits](#convolutional-neural-networks-to-recognize-digits)
 
 ---
 #### *[Time series forecasting of CO<sub>2</sub> emissions](https://github.com/fparisio/DataScience/tree/main/TimeSeriesCO2ForecastNatGas)*
@@ -57,7 +57,7 @@ I have divided the projects into macro-categories based on the typology of the p
 ---
 #### *[Convolutional neural networks to recognize digits](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
 
-**TL; DR**: TBW
+**TL; DR**: I build a convolutional neural network (CNN) to recognize the housing number digits.
 
 **Executive Summary**: TBW
 
