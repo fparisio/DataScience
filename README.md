@@ -18,12 +18,16 @@
 
 The repository contains a series of data science and machine learning projects that I carried out for training, academic and applied research purposes. The content is divided into subcategories and each project is implemented as either *[jupyter notebook](https://jupyter.org/)* or a *[python](https://www.python.org/)* script.
 
-### Content
+### Table of Contents
 
 I have divided the projects into macro-categories based on the typology of the problem at hand.
 
+- [Time series forecasting of CO<sub>2</sub> emissions](#Time-series)
+- [Recommendation system for Amazon products](#Rec-sys)
+- [Convolutional neural networks to recognize digits](#CNN)
+
 ---
-#### *[Time series analysis: forecasting CO<sub>2</sub> emissions](https://github.com/fparisio/DataScience/tree/main/TimeSeriesCO2ForecastNatGas)*
+#### *[Time series forecasting of CO<sub>2</sub> emissions](https://github.com/fparisio/DataScience/tree/main/TimeSeriesCO2ForecastNatGas)*
 
 **TL; DR**: The project forecasts a 1 year horizon of CO<sub>2</sub> emissions stemming from natural gas based electricity production in the United States. Through an optimized and cross-validated SARIMAX model, I predict a 6.7% increase of emitted CO<sub>2</sub> in the 1 year horizon with an uncertainty of approx. 10%.
 
@@ -38,7 +42,7 @@ I have divided the projects into macro-categories based on the typology of the p
 </p>
 
 ---
-#### *[Recommendation systems: build a RS for Amazon products](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
+#### *[Recommendation system for Amazon products](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
 
 **TL; DR**: The project goal is to recommend the best amazon products available to the users by using some recommendation systems techniques.
 
@@ -51,7 +55,7 @@ I have divided the projects into macro-categories based on the typology of the p
 </p>
 
 ---
-#### *[Neural networks: build a model to recognize digits](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
+#### *[Convolutional neural networks to recognize digits](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
 
 **TL; DR**: TBW
 
