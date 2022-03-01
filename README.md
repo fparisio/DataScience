@@ -44,11 +44,11 @@ I have divided the projects into macro-categories based on the typology of the p
 ---
 #### *[Recommendation system for Amazon products](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
 
-**TL; DR**: The project goal is to recommend the best amazon products available to the users by using some recommendation systems techniques.
+**TL; DR**: I built a series of recommendation systems for Amazon products. All models are optimized to reach a precision of 85% minimum.
 
-**Executive Summary**: TBW
+**Executive Summary**: The project goal is to recommend the best amazon products available to the users by using some recommendation systems techniques. I have applied collaborative filtering and matrix factorization to build a series of recommendation systems. The collaborative filtering technique evaluates cosine similarity and employs the KNN method to identify similar users or items, based on whether user-user or item-item approach is followed. A third model is built following a matrix factorization approach, where the Singular Value Decomposition (SVD) algorithm uses the latent features of the user-item space to populate the sparse matrix of ratings. Precision, recall and F1 score are used as evaluation metrics. All models are optimized through an hyper-parameters grid search. The predictions of the item-based models are corrected to take into account the number of ratings per product (more ratings imply more reliable predictions). All models offer a very good performance with precision above 85%, with the best performance offered by the optimized user-user (precision = 87.0%) and by the SVD (precision = 86.6%) models.
 
-**Skills**: Python, Collections, Surprise, Scikit-leanr, Pandas, Numpy, Matplotlib, Recommendation Systems, SVD.
+**Skills**: Python, Collections, Surprise, Scikit-leanr, Pandas, Numpy, Matplotlib, Recommendation Systems, Collaborative Filtering, KNN, SVD.
 
 <p align="center">
 <img src="Images/Rec_Sys.png" alt="erros" width="600"/>
