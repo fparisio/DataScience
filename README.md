@@ -46,5 +46,5 @@ I have divided the projects into macro-categories based on the typology of the p
 **Skills**: Python, Collections, Surprise, Scikit-leanr, Pandas, Numpy, Matplotlib, Recommendation Systems, SVD.
 
 <p align="center">
-<img src="Images/Rec_Sys.png" alt="erros" width="500"/>
+<img src="Images/Rec_Sys.png" alt="erros" width="600"/>
 </p>
