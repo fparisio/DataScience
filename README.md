@@ -16,7 +16,7 @@
 
 ### About
 
-The repository contains a series of data science and machine learning projects that I carried out for training, academic and applied research purposes. The content is divided into subcategories and each project is implemented as either *[jupyter notebook](https://jupyter.org/)* or a *[python](https://www.python.org/)* script.
+The repository contains a series of data science and machine learning projects that I carried out. The content is divided into subcategories and each project is implemented as either *[jupyter notebook](https://jupyter.org/)* or a *[python](https://www.python.org/)* script.
 
 ### Table of Contents
 
@@ -29,10 +29,7 @@ I have divided the projects into macro-categories based on the typology of the p
 ---
 #### *[Time series forecasting of CO<sub>2</sub> emissions](https://github.com/fparisio/DataScience/tree/main/TimeSeriesCO2ForecastNatGas)*
 
-**TL; DR**: The project forecasts a 1 year horizon of CO<sub>2</sub> emissions stemming from natural gas based electricity production in the United States. Through an optimized and cross-validated SARIMAX model, I predict a 6.7% increase of emitted CO<sub>2</sub> in the 1 year horizon with an uncertainty of approx. 10%.
-
-
-**Executive Summary**: Precise and accurate forecasts of CO<sub>2</sub> emissions can help policy makers devise strategies and measure their effects in reducing emissions to meet the climate targets. Here, I have analyzed CO<sub>2</sub> emissions from electricity production employing natural gas. I compare different algorithms (AR, MA, ARMA, ARIMA, SARIMAX) optimized to build a reliable forecast at 1 year horizon. I applied rolling split Monte Carlo cross-validation to evaluate the forecast accuracy. The optimized SARIMAX model is the best solution that strikes a balance between forecast precision and model complexity. The Symmetric Mean Absolute Percentage Error (SMAPE) on testing data is below 3%. The cross-validation shows an (expected) increasing average error with the forecasting horizon. The average error remains below 11% and roughly 75% of the forecasts are likely to have a SMAPE&lt;15%–a proof of the model’s reliability and robustness. The model predicts that CO<sub>2</sub> emissions will increase and will do so at an increased pace compared to the previous 10 years. The indication for policy maker is clear: we should rapidly take stronger measures to reduce CO<sub>2</sub> emissions.
+**Summary**: This project forecasts a 1-year increase of 6.7% in CO<sub>2</sub> emissions from natural gas-based electricity production in the United States using an optimized and cross-validated SARIMAX model, with an uncertainty of about 10%. The model's reliability and robustness are demonstrated by a Symmetric Mean Absolute Percentage Error (SMAPE) below 3% on testing data and a cross-validation showing 75% of forecasts with a SMAPE less than 15%. These forecasts can inform policymakers on the need for stronger measures to reduce CO<sub>2</sub> emissions.
 
 **Tools**: Python, Statsmodels, Pandas, Numpy, Matplotlib, Itertools, Tqdm, Scipy, Seaborn, SARIMAX, Time Series Analysis, Rolling-split Validation,  Monte Carlo Simulations.
 
@@ -44,27 +41,34 @@ I have divided the projects into macro-categories based on the typology of the p
 ---
 #### *[Recommendation system for Amazon products](https://github.com/fparisio/DataScience/tree/main/RecommendationSystem)*
 
-**TL; DR**: I built a series of recommendation systems for Amazon products. All models are optimized to reach a precision of 85% minimum.
-
-**Executive Summary**: The project goal is to recommend the best amazon products available to the users by using some recommendation systems techniques. I have applied collaborative filtering and matrix factorization to build a series of recommendation systems. The collaborative filtering technique evaluates cosine similarity and employs the KNN method to identify similar users or items, based on whether user-user or item-item approach is followed. A third model is built following a matrix factorization approach, where the Singular Value Decomposition (SVD) algorithm uses the latent features of the user-item space to populate the sparse matrix of ratings. Precision, recall and F1 score are used as evaluation metrics. All models are optimized through an hyper-parameters grid search. The predictions of the item-based models are corrected to take into account the number of ratings per product (more ratings imply more reliable predictions). All models offer a very good performance with precision above 85%, with the best performance offered by the optimized user-user (precision = 87.0%) and by the SVD (precision = 86.6%) models.
+**Summary**: I developed a series of recommendation systems for Amazon products using collaborative filtering, matrix factorization, and optimization techniques to achieve a minimum precision of 85%. The collaborative filtering models use cosine similarity and KNN for user-user or item-item approaches, while the matrix factorization model employs the SVD algorithm. Each model's performance is evaluated and optimized using precision, recall, and F1 score metrics, with the user-user and SVD models achieving the best results.
 
 **Tools**: Python, Collections, Surprise, Scikit-leanr, Pandas, Numpy, Matplotlib, Recommendation Systems, Collaborative Filtering, KNN, SVD.
 
 <p align="center">
-<img src="Images/Rec_Sys.png" alt="erros" width="600"/>
+<img src="Images/Rec_Sys.png" alt="errors" width="600"/>
+</p>
+
+---
+#### *[Customer churn prediction](https://github.com/fparisio/mlops_churn/tree/main)*
+
+**Summary**: I constructed a machine learning pipeline that automates exploratory data analysis (EDA) and trains two predictive models (Random Forest and Logistic Regression) to forecast customer churn. The code quality is ensured through linting, formatting, and pre-commit githooks verification. This project serves as an example of best practices in MLOps.
+
+**Tools**: Python, Scikit-learn, Pandas, Numpy, Matplotlib, Pytest, Pylint, Black.
+
+<p align="center">
+<img src="https://github.com/fparisio/mlops_churn/blob/main/images/results/roc_plot.png" alt="errors" width="600"/>
 </p>
 
 ---
 #### *[Convolutional neural networks to recognize digits](https://github.com/fparisio/DataScience/tree/main/DigitRecognition)*
 
-**TL; DR**: I build a convolutional neural network (CNN) to recognize the housing number digits from a library of images. The deep learning models performs very well and can recognize digits from the image database with an accuracy above 90%.
-
-**Executive Summary**: In this project I build a convolutional neural network (CNN) to classify the  Street View Housing Numbers (SVHN) image data. Deep learning has been extensively employed as an image recognition tool and CNN is one of the most suited algorithm. Here, I build two different CNN models to fit the SVHN image database. Both models utilize convolutional layers followed by max-pooling ones, a dense layer and an output dense layer with a softmax activation function to classify the digits from 0 to 9 (one hot encoded). However, the initial model did not reached a sufficient accuracy (<85%) in the validation data. The model was improved by adding two more convolutional layers and a batch normalization layer after the max-pooling. Additionally, a dropout layer was placed before the final dense layer to reduce the number of trainable parameters and gain in model generalization. The second model performs very well with an accuracy above 90% with 30 training epochs and a confusion matrix that shows off-diagonal values 2 orders of magnitude small than the diagonal ones. The deep learning model is a robust tool to recognize digits from a labeled image database.
+**Summary**: I developed a convolutional neural network (CNN) to identify housing number digits using the Street View Housing Numbers (SVHN) image dataset. By incorporating additional convolutional layers, batch normalization, and dropout, the model achieved over 90% accuracy. This deep learning approach effectively recognizes digits from labeled image databases, demonstrating the versatility of CNNs in image recognition tasks.
 
 **Tools**: Python, Scikit-learn, Pandas, Numpy, Matplotlib, TensorFlow, Keras, Artificial Neural Networks, Convolutional Neural Networks, Image Recognition.
 
 <p align="center">
-<img src="Images/digit_recognition.png" alt="erros" width="600"/>
-<img src="Images/loss_CNN.png" alt="erros" width="300"/>
-<img src="Images/ConfusionMatrix_CNN.png" alt="erros" width="300"/>
+<img src="Images/digit_recognition.png" alt="errors" width="600"/>
+<img src="Images/loss_CNN.png" alt="errors" width="300"/>
+<img src="Images/ConfusionMatrix_CNN.png" alt="errors" width="300"/>
 </p>
