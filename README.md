@@ -57,7 +57,7 @@ I have divided the projects into macro-categories based on the typology of the p
 **Tools**: Python, Scikit-learn, Pandas, Numpy, Matplotlib, Pytest, Pylint, Black.
 
 <p align="center">
-<img src="https://github.com/fparisio/mlops_churn/blob/main/images/results/roc_plot.png" alt="errors" width="600"/>
+<img src="https://github.com/fparisio/mlops_churn/blob/main/images/results/roc_plot.png" alt="errors" width="400"/>
 </p>
 
 ---
